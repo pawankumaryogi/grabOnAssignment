@@ -5,7 +5,7 @@
 
 # go on the below link to use the app
 
-[This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).](https://6489daf563b9bc06ce806887--pawan-realstate.netlify.app/)
+(https://6489daf563b9bc06ce806887--pawan-realstate.netlify.app/)
 
 ## how to ruln locally
 1. clone the repo
