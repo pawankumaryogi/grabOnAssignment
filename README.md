@@ -1,18 +1,19 @@
-# Getting Started with Create React App
+![image](https://github.com/pawankumaryogi/grabOnAssignment/assets/65168616/e3c35497-1921-447b-bea6-c8a156761bac)
+![image](https://github.com/pawankumaryogi/grabOnAssignment/assets/65168616/745a1403-c7d9-4b0b-9494-b4ded3f6ba70)
+![image](https://github.com/pawankumaryogi/grabOnAssignment/assets/65168616/465f17b2-32b8-41e1-ba45-21faf6a79c16)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# go on the below link to use the app
 
-In the project directory, you can run:
+[This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).](https://6489daf563b9bc06ce806887--pawan-realstate.netlify.app/)
 
-### `npm start`
+## how to ruln locally
+1. clone the repo
+2. install dependencies by (npm i)
+3. got to crud-app directory and run npm start (it will start on localhost:3000)
+4. go to backend directory and run npm start (it will start on localhost:3001)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
