@@ -5,6 +5,26 @@
   font-family: Arial, sans-serif;
   color: #333;
 }
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.theadSticky {
+  position: sticky;
+  top: 160px;
+  background-color: #fff;
+  z-index: 1;
+}
+.createButton{
+  margin-left: 47%;
+  font-size: 40px;
+  background-color: rgb(40, 193, 201);
+  border-radius: 20px;
+}
+
 
 h1 {
   text-align: center;
@@ -15,13 +35,15 @@ button {
   margin-bottom: 10px;
   padding: 10px 20px;
   border: none;
-  background-color: #249a28;
+  background-color: #3f950e;
+  border-radius: 20px;
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 #deleteButton{
-background-color: rgb(194, 16, 16);
+background-color: rgb(142, 22, 22);
+font-size: 18px;
 }
 #deleteButton:hover{
 background-color:  #c2c2c2;

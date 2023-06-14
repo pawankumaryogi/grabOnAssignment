@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const PostsTable = () => {
   const [posts, setPosts] = useState([]);
@@ -10,27 +10,28 @@ const PostsTable = () => {
   }, []);
 
   const fetchPosts = async () => {
-    const response = await fetch('http://localhost:3001/posts');
+    const response = await fetch("http://localhost:3001/posts");
     const data = await response.json();
     setPosts(data);
   };
 
   const deletePost = async (id) => {
     await fetch(`http://localhost:3001/posts/${id}`, {
-      method: 'DELETE',
+      method: "DELETE",
     });
     fetchPosts();
   };
 
   return (
     <div>
-      <h1>Posts Table</h1>
-      <table>
-        <thead>
+      <div className="header">
+        <h1>Posts Table</h1>
         <Link to="/create">
-      <button>Create</button>
-
-      </Link>
+          <button className="createButton">Create</button>
+        </Link>
+      </div>
+      <table>
+        <thead className="theadSticky">
           <tr>
             <th>ID</th>
             <th>Title</th>
@@ -46,15 +47,17 @@ const PostsTable = () => {
               <td>{post.body}</td>
               <td>
                 <Link to={`/update/${post.id}`}>
-                <button>Update</button>
-                    </Link>
-                <button id='deleteButton' onClick={() => deletePost(post.id)}>Delete</button>
+                  <button>Update</button>
+                </Link>
+                <button id="deleteButton" onClick={() => deletePost(post.id)}>
+                  Delete
+
+                </button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      
     </div>
   );
 };
